@@ -1,4 +1,10 @@
 # 🔗 URL Shortener System with FastAPI, Redis, MongoDB, and Locust
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB.svg?logo=python\&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.99.0-009688.svg)](https://fastapi.tiangolo.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-6.0-47A248.svg)](https://www.mongodb.com/)
+[![Redis](https://img.shields.io/badge/Redis-7.0-DC382D.svg)](https://redis.io/)
+[![Locust](https://img.shields.io/badge/Locust-2.16.0-00BFFF.svg)](https://locust.io/)
 
 This project implements a scalable, high-performance URL shortener backend with real-time analytics, optimized caching, and high-traffic load testing.
 
@@ -35,9 +41,10 @@ locust -f app/locustfile.py \
 ```
 
 Outputs will be saved in `results/`:
-- `loadtest_stats.csv`
-- `loadtest_failures.csv`
-- `loadtest_stats_history.csv`
+
+* `loadtest_stats.csv`
+* `loadtest_failures.csv`
+* `loadtest_stats_history.csv`
 
 ---
 
@@ -51,31 +58,31 @@ pytest tests/
 
 ## 🛠 Tech Stack
 
-- **FastAPI** – high-speed async web server
-- **MongoDB** – stores long-to-short URL mappings
-- **Redis** – caches hot URL entries and tracks view counts
-- **Locust** – load testing framework for HTTP users
-- **Uvicorn** – ASGI server with multiple workers
-- **Pytest** – test framework for backend APIs
+* **FastAPI** – high-speed async web server
+* **MongoDB** – stores long-to-short URL mappings
+* **Redis** – caches hot URL entries and tracks view counts
+* **Locust** – load testing framework for HTTP users
+* **Uvicorn** – ASGI server with multiple workers
+* **Pytest** – test framework for backend APIs
 
 ---
 
 ## 📌 API Endpoints
 
-| Method | Endpoint                  | Description                        |
-|--------|---------------------------|------------------------------------|
-| POST   | `/shorten`                | Shorten a long URL                 |
-| GET    | `/{short_id}`             | Retrieve the original long URL     |
-| GET    | `/analytics/{short_id}`   | View access stats for a short URL  |
+| Method | Endpoint                | Description                       |
+| ------ | ----------------------- | --------------------------------- |
+| POST   | `/shorten`              | Shorten a long URL                |
+| GET    | `/{short_id}`           | Retrieve the original long URL    |
+| GET    | `/analytics/{short_id}` | View access stats for a short URL |
 
 ---
 
 ## ✨ Future Improvements
 
-- User authentication and rate limiting
-- QR code generation
-- Geo-based analytics
-- Full deployment with Docker and reverse proxy
-- Horizontal scaling with MongoDB + Redis clustering
+* User authentication and rate limiting
+* QR code generation
+* Geo-based analytics
+* Full deployment with Docker and reverse proxy
+* Horizontal scaling with MongoDB + Redis clustering
 
 ---
