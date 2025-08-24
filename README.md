@@ -1,12 +1,19 @@
-# 🔗 URL Shortener System with FastAPI, Redis, MongoDB, and Locust
+# 🔗 High-Performance URL Shortener System
+
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Python](https://img.shields.io/badge/Python-3.8+-3776AB.svg?logo=python\&logoColor=white)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.99.0-009688.svg)](https://fastapi.tiangolo.com/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-6.0-47A248.svg)](https://www.mongodb.com/)
 [![Redis](https://img.shields.io/badge/Redis-7.0-DC382D.svg)](https://redis.io/)
 [![Locust](https://img.shields.io/badge/Locust-2.16.0-00BFFF.svg)](https://locust.io/)
 
-This project implements a scalable, high-performance URL shortener backend with real-time analytics, optimized caching, and high-traffic load testing.
+A scalable, high-performance URL shortener backend API built with modern technologies. This system is designed for low-latency redirects, real-time analytics, and resilience under heavy load, leveraging Redis for caching and MongoDB for flexible data storage.
+
+---
+
+## 📊 System Architecture
+
+![System Architecture Diagram](diagram/diagram.gif)
 
 ---
 
